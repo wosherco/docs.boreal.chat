@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "docs.boreal.chat",
+  "name": "docs-boreal-chat",
   "compatibility_date": "2025-03-25",
   "assets": {
     "directory": "./dist"
