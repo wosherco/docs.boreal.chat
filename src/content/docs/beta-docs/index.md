@@ -9,7 +9,8 @@ Welcome to **boreal.chat**, the best upcoming AI chat platform, fully open-sourc
 
 - **Reliability:** We inherit the best uptime from [openrouter.ai](https://openrouter.ai), the best API provider for LLMs right now.
 - **Speed:** Quick UI built with Svelte and performance in mind. Fast local-first database syncing for seamless browser experience.
-- **Quality-of-Life Features:** Threading, keyboard shortcuts, and more pretty soon...
+- **Quality-of-Life Features:** Threading, keyboard shortcuts, archive chats, and more pretty soon...
+- **Responsive:** Use boreal.chat on your phone, tablet, or desktop. It works everywhere.
 - **Open-Source:** Fully open-source, you can self-host it for free.
 
 ## Self-Hosting Option

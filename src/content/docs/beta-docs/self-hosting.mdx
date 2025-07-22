@@ -1,19 +1,18 @@
 ---
 title: Self-Hosting
-description: Self-Hosting for boreal.chat.
+description: Self-hosting guide for boreal.chat.
 ---
 import { Tabs, TabItem, Aside } from '@astrojs/starlight/components';
 
+You can easily self-host boreal.chat using Docker Compose.
 
-You can easily self-host boreal.chat by using docker-compose.
+## Installing Docker
 
-## Installing docker
-
-Please, follow the [official docker installation guide](https://docs.docker.com/engine/install/) to install docker in your system if you haven't already.
+Please follow the [official Docker installation guide](https://docs.docker.com/engine/install/) to install Docker on your system if you haven't already.
 
 ## Running boreal.chat
 
-To run `boreal.chat` you need to grab our `docker-compose.yaml` file, download and configure the `.env` file.
+To run `boreal.chat`, you need to download our `docker-compose.yaml` file and configure the `.env` file.
 
 Let's start by downloading the `docker-compose.yaml` file:
 
@@ -45,48 +44,47 @@ Now, let's download the `.env` file:
   </TabItem>
 </Tabs>
 
-The values are already filled with the correct values, but you can change them if you want.
+The values are already filled with the correct defaults, but you can modify them if needed.
 
-Now, let's run the containers:
+Now, let's start the containers:
 
 ```bash
 docker compose up -d
 ```
 
-You should see boreal.chat running at port `3000` in your browser, at [http://localhost:3000](http://localhost:3000).
+You should see boreal.chat running on port `3000` in your browser at [http://localhost:3000](http://localhost:3000).
 
-<Aside type="caution">It is **NOT** recommended to access your instance of boreal.chat using http 1.1. It will be **SLOW**, to the point of being unusable. Please, follow the next steps to configure your instance to use http 2.+</Aside>
-
-## Configuring boreal.chat to use HTTP 2.0
-
-For running boreal.chat with http 2.0, you need to configure a reverse proxy to use http 2.0.
-
-### For local use (quick, but not recommended)
-
-Install `caddy` in your system, run `caddy trust`, and then proxy port `3000`. Make sure to switch the `PUBLIC_URL` in the `.env` file.
-
-<Aside type="note">
-This part of the guide is not finished yet. Will be pretty soon...
+<Aside type="caution">
+It is **NOT** recommended to access your instance of boreal.chat using HTTP/1.1. It will be **SLOW** to the point of being unusable. Please follow the next steps to configure your instance to use HTTP/2.
 </Aside>
 
+## Configuring boreal.chat for HTTP/2
 
-### Using caddy as a reverse proxy (recommended)
+For optimal performance, you need to configure a reverse proxy to use HTTP/2.
+
+### For Local Use (Quick Setup)
+
+Install `caddy` on your system, run `caddy trust`, and then proxy port `3000`. Make sure to update the `PUBLIC_URL` in the `.env` file to match your setup.
+
+<Aside type="note">
+This section will be completed soon with detailed instructions.
+</Aside>
+
+### Using Caddy as a Reverse Proxy (Recommended)
 
 You will need:
-
 - A domain name
-- A SSL certificate for that domain name (you can use [Let's Encrypt](https://letsencrypt.org/) to get one for free)
+- An SSL certificate for that domain (you can use [Let's Encrypt](https://letsencrypt.org/) for free)
 
 <Aside type="note">
-This part of the guide is not finished yet. Will be pretty soon...
+Detailed instructions for this setup will be added soon.
 </Aside>
 
-### Using Cloudflare Tunnel (recommended)
+### Using Cloudflare Tunnel (Recommended)
 
 You will need:
-
-- A Cloudflare account with a domain name setup
+- A Cloudflare account with a domain name configured
 
 <Aside type="note">
-This part of the guide is not finished yet. Will be pretty soon...
+Step-by-step guide for Cloudflare Tunnel setup coming soon.
 </Aside>
