@@ -11,7 +11,7 @@ Pricing will change in the future.
 
 ### Free Plan
 
-Currently there is a **free plan** that has basic chatting features. You can use it by bringing your own key with OpenRouter.
+Currently, there is a **free plan** that has basic chatting features. You can use it by bringing your own key with OpenRouter.
 
 ### Unlimited Plan
 
