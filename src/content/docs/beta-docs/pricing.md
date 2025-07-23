@@ -20,7 +20,7 @@ The only paid plan is **unlimited**, which offers:
 - Unlimited chats with fair rate limits
 - Will include in the future: files, advanced search, data analysis, and more
 
-boreal.chat is new, and we're constantly experimenting. That's why we still don't have fixed rate limits, or if this will be the final pricing model.
+boreal.chat is new, and we're constantly experimenting. That's why we don't yet have fixed rate limits or a final pricing model.
 
 ## Feedback
 
