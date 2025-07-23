@@ -1,28 +1,30 @@
 ---
 title: Beta Notices
-description: Beta Notices for boreal.chat.
+description: Beta notices for boreal.chat.
 ---
 
 ## Status
 
 **boreal.chat** is currently in **beta**. Features and APIs may change without notice.
 
-## Known Limitations
+## Troubleshooting
 
-- Server might be slow, or even down for some time. For more info, check the [status page](https://status.boreal.chat).
-- Syncing might be wrong or fail. Please, feel free to report any issues.
-- UI might be buggy. Please, feel free to report any issues.
+### Syncing/Hydration Issues
 
-## Roadmap
+If you're experiencing issues with syncing/hydration, please try the following:
 
-- [ ] Better search
-- [ ] Support for file uploads (chat attachments, projects, image generation)
-- [ ] Use MCP servers
-- [ ] Add integrations
+1. Open the browser's developer tools
+2. Navigate to the "Application" tab and find the IndexedDB section
+3. Find the database called `/pg/borealchat` and delete it
+4. Refresh the page
 
-## Billing
+If the issue persists, please open a [GitHub issue](https://github.com/wosherco/boreal.chat/issues).
 
-For now, boreal.chat will remain free to use. However, in the future it'll be paid if used online. For self-hosting, you'll be able to use it for free. Don't worry, you'll be able to export and import your data easily.
+### Mobile UI Issues
+
+We iterate fast, and we're working on a better mobile experience. We might miss some edge cases or focus first on the desktop experience.
+
+If you think something can be improved, please open a [GitHub issue](https://github.com/wosherco/boreal.chat/issues).
 
 ## Feedback
 
